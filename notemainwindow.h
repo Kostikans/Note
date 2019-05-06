@@ -28,7 +28,6 @@ private:
     QMap<unsigned int, QString> *NoteList;
     QString currentText;
     unsigned int i;
-    QLabel *label;
 };
 
 #endif // NOTEMAINWINDOW_H

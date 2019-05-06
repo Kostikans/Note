@@ -11,7 +11,7 @@ NoteMainWindow::NoteMainWindow(QWidget *parent) :
     ui->textEdit->setReadOnly(1);
     NoteList = new QMap<unsigned int, QString>;
     i = 0;
-    label = new QLabel;
+
 }
 
 NoteMainWindow::~NoteMainWindow()
@@ -23,8 +23,7 @@ void NoteMainWindow::on_textEdit_textChanged()
 {
     currentText = ui->textEdit->toPlainText();
     NoteList->find(i)->swap(currentText);
-    label->setText(NoteList->find(i).value());
-    label->show();
+    ui->KEK->setText(currentText);
 }
 
 void NoteMainWindow::on_pushButton_clicked()

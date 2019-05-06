@@ -37,27 +37,30 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>281</width>
-      <height>231</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>300</y>
+      <x>330</x>
+      <y>10</y>
       <width>141</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
      <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="KEK">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3554343PushBugfdttt453</string>
     </property>
    </widget>
   </widget>
