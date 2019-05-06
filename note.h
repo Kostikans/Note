@@ -2,7 +2,10 @@
 #define NOTE_H
 
 #include <QWidget>
-
+#include <QString>
+#include <QLabel>
+#include <QTextBrowser>
+#include <QTextEdit>
 namespace Ui {
 class Note;
 }
@@ -15,8 +18,16 @@ public:
     explicit Note(QWidget *parent = nullptr);
     ~Note();
 
+private slots:
+    void on_plainTextEdit_textChanged();
+
+
+
 private:
     Ui::Note *ui;
+    QString m_noteText;
+
+
 };
 
 #endif // NOTE_H

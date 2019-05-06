@@ -2,6 +2,9 @@
 #define NOTEMAINWINDOW_H
 
 #include <QMainWindow>
+#include "QToolBar"
+#include <QLabel>
+#include <QVector>
 
 namespace Ui {
 class NoteMainWindow;
@@ -15,8 +18,17 @@ public:
     explicit NoteMainWindow(QWidget *parent = nullptr);
     ~NoteMainWindow();
 
+private slots:
+
+    void on_textEdit_textChanged();
+    void on_pushButton_clicked();
+
 private:
     Ui::NoteMainWindow *ui;
+    QMap<unsigned int, QString> *NoteList;
+    QString currentText;
+    unsigned int i;
+    QLabel *label;
 };
 
 #endif // NOTEMAINWINDOW_H

@@ -12,3 +12,11 @@ Note::~Note()
 {
     delete ui;
 }
+
+void Note::on_plainTextEdit_textChanged()
+{
+    m_noteText = ui->plainTextEdit->toPlainText();
+}
+
+
+
